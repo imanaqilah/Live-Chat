@@ -9,6 +9,7 @@ const ChatDisplay = ({ conversation }) => {
                 conversation.map((mes, index) => {
                     return (
                         <div key={`msg-${index}`}>
+                            {/* {console.log(mes)} */}
                             <div className="mb-5">
                                 <img src={`https://api.hello-avatar.com/adorables/150/${mes.username}.png`} />
                                 <strong>{mes.username}</strong>
